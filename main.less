@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica";
+  // padding: 50px 20px 0;
+  background: #ffffff;
+  color: #444;
+  margin: 0;
+}
+
+.montessori_motto {
+  font-size: 45px;
+  line-height: 1.2em;
+  border-bottom: #CCC solid 1px;
+  margin-top: 90px;
+  // padding: 20px 0;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+/* *****   HEADER   ***** */
+
+header {
+  height: 80px;
+  background-color: teal;
+}
+
+/* *****   NAV   ***** */
+
+nav {
+
+  position: fixed;
+  top: 0;
+  background-color: yellow;
+  width: 90px;
+
+
+  li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    list-style-type: none;
+    width: 100%;
+  }
+
+}
+
+nav::after, nav::before {
+  clear: both;
+}
+
+/* *****   MAIN CONTENT   ***** */
+
+// aside {
+//   display: inline-block;
+//   max-width: 30%;
+//   margin-left: 120px;
+// }
+// 
+/* *****   ABOUT US    ***** */
+
+.container {
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.mission_statement {
+  color: red;
+  drop-shadow: 3px darkgray;
+}
+/* *****   CONTACT US    ***** */
+
+.contact-container h2 {
+  text-align: center;
+}
+
+.blocks {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* *****   DIRECTIONS    ***** */
+
+
+
+.directions {
+  color: red;
+}
+
+iframe {
+  position: absolute;
+  border: 5px solid black;
+  left: 10%;
+  right: 10%;
+  top: 150px;
+  max-width: 80%;
+}
+
+/* *****   FOOTER   ***** */
+
+footer {
+  height: 40px;
+  background-color: blue;
+}
+
+footer ul li {
+  display: inline;
+}
+
+@media screen and (min-width: 250px) {
+
+  aside {
+    margin: 0 10%;
+  }
+  .kid_pics {
+    display: block;
+    margin: 0 10%;
+  }
+
+  nav {
+
+    width: 100%;
+
+    .nav {
+      width: 100%;
+      display: block;
+    }
+
+    img {
+      max-width: 40px;
+    }
+  }
+
+  .kid_pics {
+    max-width: 600px;
+  }
+
+  .nav li {
+    display: inline;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+ 
+
+  nav {
+
+    max-width: 10%;
+    height: 100%;
+
+   .nav li {
+    display: block;
+   }
+  }
+
+  aside, h1 {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  
+  aside {
+    float: left;
+    max-width: 30%;
+    margin-right: 5%;
+  }
+
+  .aside2 {
+    margin-left: 5%;
+  }
+
+  footer {
+    clear: both;
+  }
+}
+@media screen and (min-width: 900px) {
+  .nav li {
+    display: block;
+  }
+
+  nav {
+    max-width: 100px;
+    position: left;
+  }
+}
+
+// @media screen and (min-width: 500px) {
+
+// }
