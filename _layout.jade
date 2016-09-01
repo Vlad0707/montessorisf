@@ -12,38 +12,49 @@ html
         //-     div Welcome!
 
         //-     div (415)-292-7970
+        div
+            nav
+                ul.nav
+                    li.home
+                        a(title="Home" href="index.html")
+                            img(src="/images/home-shape.svg")
+                    li.about
+                        a(title="About Us" href="about_us.html")
+                            img(src="/images/triangle.svg" alt="About Us")
+                    li.blog
+                        a(title="Blog" href="blog.html")
+                            img(src="/images/square.svg" alt="Blog")
+                    li.contact
+                        a(title="Contact Us" href="contact_us.html") 
+                            img(src="/images/circle.svg" alt="About Us")   
+                    li.directions
+                        a(title="Directions" href="directions.html") 
+                            img(src="/images/diamond.png" alt="About Us")
+        div.drawer
+            ul
+                li.ome OME
+                li.boutus BOUT US
+                li.log LOG
+                li.ontactus ONTACT US
+                li.irections IRECTIONS
 
-        nav
-            ul.nav
-                li.home
-                    a(title="Home" href="index.html")
-                        img(src="/images/home-shape.svg")
-                li.about
-                    a(title="About Us" href="about_us.html")
-                        img(src="/images/triangle.svg" alt="About Us")
-                li.blog
-                    a(title="Blog" href="blog.html")
-                        img(src="/images/square.svg" alt="Blog")
-                li.contact
-                    a(title="Contact Us" href="contact_us.html") 
-                        img(src="/images/circle.svg" alt="About Us")   
-                li.directions
-                    a(title="Directions" href="directions.html") 
-                        img(src="/images/diamond.png" alt="About Us")
+
                  
     != yield
 
-    footer
-        ul
-            li 
-                a(href="index.html") Home
-            li 
-                a(href="about_us.html") About Us
-            li 
-                a(href="blog.html") Blog
-            li 
-                a(href="directions.html") Directions
-            li 
-                a(href="contact_us.html") Contact Us
+        footer
+            ul
+                li 
+                    a(href="index.html") Home
+                li 
+                    a(href="about_us.html") About Us
+                li 
+                    a(href="blog.html") Blog
+                li 
+                    a(href="directions.html") Directions
+                li 
+                    a(href="contact_us.html") Contact Us
+
+        script(src="script.js")
 
 
