@@ -37,38 +37,42 @@ nav {
   top: 0;
   background-color: yellow;
   width: 90px;
-
+  z-index: 2;
+  
+  ul {
+    list-style-type: none;
+    width: 100%;
+  }
 
   li {
     margin-left: auto;
     margin-right: auto;
   }
 
-  ul {
-    list-style-type: none;
-    width: 100%;
-  }
+}
 
+.drawer>ul>li::first-letter {
+  visibility: hidden;
 }
 
 .drawer {
+    
   width: 100%;
   height: 100%;
   top: 0;
   background-color: yellow;
   color: black;
-  z-index: 999;
+  z-index: 1;
   position: fixed;
   overflow: hidden;
-  display: none;
+  // display: none;
+  right: 100%;
   opacity: .9;
-}
+  transition: .25s ease-in-out;
 
-.drawer {
-    
-    li {
+    a {
     position: relative;
-    left: 46px;
+    left: 50px;
     list-style-type: none;
     font-weight: 900;
     
@@ -94,12 +98,23 @@ nav {
     top: 140px;
   }
 
+  .close {
+    top: 160px;
+    position: relative;
+    z-index: 2;
+  }
+
 }
 
 .open {
-  display: block;
-  left: 0;
-  transition: .25s ease-in-out;
+
+  .drawer {
+  right: 0;
+  }
+
+  .directions {
+    transform: rotate(180deg);
+  }
 }
 
 nav::after, nav::before {
@@ -167,9 +182,12 @@ footer ul li {
   aside {
     margin: 0 10%;
   }
+
   .kid_pics {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
   }
 
   nav {
@@ -186,8 +204,8 @@ footer ul li {
     }
   }
 
-  .kid_pics {
-    max-width: 600px;
+  .drawer>ul>li>a {
+    writing-mode: sideways-lr;
   }
 
   .nav li {
